@@ -1,60 +1,10 @@
 import React, { useState } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-// import {
-//   AppstoreOutlined,
-//   //   MailOutlined,
-//   SettingOutlined,
-//   UserOutlined,
-//   UserAddOutlined,
-// } from "@ant-design/icons";
-// import { Menu } from "antd";
-
-// const items = [
-//   {
-//     label: "Home",
-//     key: "home",
-//     icon: <AppstoreOutlined />,
-//   },
-//   {
-//     label: "Login",
-//     key: "login",
-//     icon: <UserOutlined />,
-//   },
-//   {
-//     label: "Register",
-//     key: "register",
-//     icon: <UserAddOutlined />,
-//   },
-//   {
-//     label: "User Name",
-//     key: "SubMenu",
-//     icon: <SettingOutlined />,
-//     children: [
-//       {
-//         type: "group",
-//         children: [
-//           {
-//             label: "Option 1",
-//             key: "setting:1",
-//           },
-//           {
-//             label: "Option 2",
-//             key: "setting:2",
-//           },
-//         ],
-//       },
-//     ],
-//   },
-// ];
 
 const Header = () => {
   const [current, setCurrent] = useState("home");
 
-  //   const onClick = (e) => {
-  //     console.log("click ", e.key);
-  //     setCurrent(e.key);
-  //   };
   return (
     <>
       <Navbar bg="dark" expand="lg" variant="dark">
@@ -92,14 +42,6 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      {/* <Menu
-        theme="dark"
-        onClick={onClick}
-        // selectedKeys={[current]}
-        mode="horizontal"
-        items={items}
-        
-      /> */}
     </>
   );
 };

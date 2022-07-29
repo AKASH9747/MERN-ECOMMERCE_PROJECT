@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import Header from "./components/nav/Header";
 import LoginScreen from "./screens/auth/LoginScreen";
+import RegisterComplete from "./screens/auth/RegisterComplete";
 import RegisterScreen from "./screens/auth/RegisterScreen";
 import Home from "./screens/Home";
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/register" element={<RegisterScreen />} />
+        <Route path="/register/complete" element={<RegisterComplete />} />
       </Routes>
     </Router>
   );
